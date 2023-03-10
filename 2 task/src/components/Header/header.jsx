@@ -23,8 +23,8 @@ function Header(props) {
                 <p className={style.logo__descr}>крупный интегратор CRM в Росcии и ещё 8 странах</p>
             </a>
             <ul className={style.menu}>
-                {menuItems.map((item) => (
-                    <a key={item.id} href={`/${item.href}`} className={style.menu__item}>{item.title}</a>
+                {menuItems.map(({id, title, href}) => (
+                    <a key={id} href={`/${href}`} className={style.menu__item}>{title}</a>
                 ))}
             </ul>
             <Contacts/>
