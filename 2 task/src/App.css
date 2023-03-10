@@ -1,0 +1,19 @@
+body{
+  background: #0E1014;
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  font-weight: 300;
+  color: whitesmoke;
+}
+
+.Down{
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-weight: 400;
+  color: whitesmoke;
+}
+
