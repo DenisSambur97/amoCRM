@@ -5,3 +5,8 @@ body {
   font-family: 'Inter', 'Montserrat', sans-serif;
 }
 
+#root {
+  --main: #E4E5EA;
+  --blue-btn: #4077F3;
+  --gradient: linear-gradient(to right ,#FCB045, #FD1D1D)
+}
