@@ -1,9 +1,6 @@
 import React from "react";
-import Logo from "../../image/logo_welbex.svg"
-import Telegram from "../../image/telegram.svg"
-import Viber from "../../image/viber.svg"
-import Whatsapp from "../../image/whatsapp.svg"
 
+import Logo from "../../image/logo_welbex.svg"
 import style from "./header.module.sass"
 import Contacts from "../Contacts/contacts";
 
@@ -17,7 +14,7 @@ function Header(props) {
     ]
 
     return(
-        <div className={style.header}>
+        <header className={style.header}>
             <a className={style.logo} href="#">
                 <img src={Logo} alt="Welbex"/>
                 <p className={style.logo__descr}>крупный интегратор CRM в Росcии и ещё 8 странах</p>
@@ -28,7 +25,7 @@ function Header(props) {
                 ))}
             </ul>
             <Contacts/>
-        </div>
+        </header>
     )
 }
 

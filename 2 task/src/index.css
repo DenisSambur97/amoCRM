@@ -8,5 +8,6 @@ body {
 #root {
   --main: #E4E5EA;
   --blue-btn: #4077F3;
-  --gradient: linear-gradient(to right ,#FCB045, #FD1D1D)
+  --dark-blue-btn: #1244aa;
+  --gray: #656566;
 }
