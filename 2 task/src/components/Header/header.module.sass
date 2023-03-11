@@ -1,9 +1,8 @@
 .header
   max-height: 73px
-  margin: 46px 150px
+  padding: 46px 150px
   display: flex
   justify-content: space-between
-
 .logo
   max-width: 165px
   text-decoration: none
@@ -24,7 +23,6 @@
   &__item
     list-style-type: none
     margin-right: 30px
-    justify-content: space-between
     text-decoration: none
     z-index: 1
     color: var(--main)
@@ -35,3 +33,21 @@
     line-height: 19px
     &:hover
       cursor: pointer
+@media screen and (max-width: 1150px)
+  .header
+    padding: 46px 55px
+  .menu
+    margin-left: -80px
+    &__item
+      margin-right: 15px
+      font-weight: 300
+      font-size: 14px
+@media screen and (max-width: 880px)
+  .header
+    padding: 46px 55px
+  .menu
+    margin-left: 0
+    &__item
+      margin-right: 10px
+      font-size: 12px
+
