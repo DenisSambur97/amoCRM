@@ -87,6 +87,10 @@
     line-height: 20px
     text-align: right
     color: var(--main)
+  &__info_presents_item_description_mobile
+    display: none
+  &__info_presents_item_hyphen
+    display: none
   &__info_btn
     width: 262px
     height: 61px
@@ -108,3 +112,56 @@
 @media screen and (max-width: 950px)
   .mainContent
     padding: 120px 180px 70px 70px
+@media screen and (max-width: 780px)
+  .mainContent
+    width: 272px
+    margin: 0 auto
+    padding: 170px 80px
+    flex-direction: column
+    &__heading_title
+      font-weight: 400
+      font-size: 36px
+      line-height: 44px
+    &__info_title
+      text-align: left
+    &__info_presents_item_title
+      text-align: left
+    &__info_presents_item_description
+      text-align: left
+    &__info_btn
+      margin: 120px auto 0
+@media screen and (max-width: 480px)
+  .mainContent
+    padding: 160px 180px 0 14px
+    &__info_title
+      margin-bottom: 0
+    &__info_presents_item
+      position: relative
+    &__info_presents_item_title
+      display: none
+    &__info_presents_item_description
+      display: none
+    &__info_title_grad
+      text-transform: none
+    &__info_presents_item_description_mobile
+      display: block
+      margin-left: 20px
+      font-family: 'Montserrat',serif
+      font-style: normal
+      font-weight: 400
+      font-size: 13px
+      line-height: 16px
+      text-align: left
+      margin-top: 14px
+      color: var(--main)
+      white-space: nowrap
+      text-transform: uppercase
+    &__info_presents_item_hyphen
+      display: block
+      height: 1px
+      width: 10px
+      position: absolute
+      top: 22px
+      background: linear-gradient(90deg, rgba(252,176,69,1) 0%, rgba(253,29,29,1) 100%)
+    &__info_btn
+      display: none

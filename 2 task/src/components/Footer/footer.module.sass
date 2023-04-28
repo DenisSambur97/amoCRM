@@ -63,16 +63,33 @@
 @media screen and (max-width: 980px)
   .footer
     &__menu
-      padding: 50px 2px 0
+      padding: 10px 2px 0
     &__menu_copyright
       margin: 20px 0 5px
 @media screen and (max-width: 870px)
   .footer
+    display: block
+    width: 100%
+    background-color: black
+    padding: 15px
     &__menu
       padding-left: -20px
     &__menu:nth-child(2)
       margin-left: 0
-      width: 650px
+      height: 275px
+      width: auto
     & nav
       align-items: start
       flex-direction: column
+    &__menu_description
+      width: 100px
+    &__menu_description:nth-child(7)
+     margin-top: 60px
+    &__menu:last-child
+      .footer__menu_title
+        margin-bottom: -10px
+        text-align: start
+    &__menu_copyright
+      text-align: left
+    &__menu_policy
+      text-align: left
